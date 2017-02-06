@@ -1,28 +1,39 @@
+package apComputer;
+
 public class AustinHeatonLab10{
 	
 	public static void main (String [] args){
-		Hero myHero = new Hero(Steelheart);
-		
+		Hero myHero = new Hero("Steelheart");
+		System.out.println(myHero.getName());
 	}
 }
 
-public class Hero(String name){
+class Hero{
 	String name;
-	public Hero{
+	
+	public Hero(String name){
 		this.name = name;
 	}
+	
+	public String getName(){
+		return name;
+	}
 }
 
-public class Powers extends Hero(String name, String powers){
+class Powers extends Hero{
 	String powers;
-	public Powers{
+	String name;
+	
+	public Powers(String name, String powers){
+		this.name = name;
 		this.powers = powers;
 	}
 }
 
-public class Weapons(String weapon){
-	String weapon;
-	public Weapons{
+class Weapons{
+	String weapon = "";
+	public Weapons(String weapon){
 		this.weapon = weapon;
 	}
 }
+
