@@ -1,14 +1,14 @@
-import java.util.Scanner
+import java.util.Scanner;
 
-package apComputer;
+//package apComputer;
 
-public class AustinHeatonLab10{
+public class Ch10Lab{
 	
 	public static void main (String [] args){
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a hero: ")
+		System.out.println("Enter a hero: ");
 		String name = input.nextLine();
-		System.out.rpintln("Enter a Weapon: ");
+		System.out.println("Enter a Weapon: ");
 		String weapon = input.nextLine();
 		Hero myHero = new Hero(name);
 		
@@ -26,6 +26,10 @@ class Hero{
 	public String getName(){
 		return name;
 	}
+   
+   public String getStats(){
+      return name;
+   }
 }
 
 class Powers{
@@ -33,7 +37,7 @@ class Powers{
 	String name;
 	
 	public Powers(String name, String powers){
-		super(name);
+		super(name);//this is something you can only use for inheritance, not composition, right? it won't compile.
 		this.powers = powers;
 	}
 }
