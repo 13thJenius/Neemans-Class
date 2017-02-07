@@ -1,4 +1,4 @@
-public class AustinHeatonLab10{
+public class Ch10Lab{
 	
 	public static void main (String [] args){
 		Super mySuper = new Super("Mr. Neeman", "Hero");
